@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config>
+	<modules>
+		<FirstScribe_SimpleConfigurableProducts>
+			<version>0.1.0</version>
+		</FirstScribe_SimpleConfigurableProducts>
+	</modules>
+	
+	<frontend>
+        <routers>
+            <checkout>
+                <args>
+                    <modules>
+                        <FirstScribe_SimpleConfigurableProducts before="Mage_Checkout">FirstScribe_SimpleConfigurableProducts</FirstScribe_SimpleConfigurableProducts>
+                    </modules>
+                </args>
+            </checkout>
+        </routers>
+    </frontend>
+</config>
